@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    display: flex;
+    height: 100vh;
+}
+p{
+    font-size: larger;
+    display:flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    color: red;
+}
+.panel{ 
+    height:100%;
+    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1 0 auto;
+    transition:
+        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        background 0.2s;
+
+}
+.panel::first-child{transform:translateX(-100%) ;}
+.panel.open-active::first-child{transform:translateY(0) ;}
+.panel::last-child{transform:translateY(100%) ;}
+.panel.open-active::last-child{transform:translateY(0) ;}
+
+
+.panel.open{
+    flex:6;
+    font-size:60px;
+    
+
+}
+.panel1{
+    background-size: cover;
+    background-image: url('https://i.picsum.photos/id/2/5000/3333.jpg?hmac=_KDkqQVttXw_nM-RyJfLImIbafFrqLsuGO5YuHqD-qQ');
+}
+.panel2{
+    background-size: cover;
+    background-image: url('https://i.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA');
+}
+.panel3{
+    background-size: cover;
+    background-image: url('https://i.picsum.photos/id/57/2448/3264.jpg?hmac=ewraXYesC6HuSEAJsg3Q80bXd1GyJTxekI05Xt9YjfQ');
+}
+.panel4{
+    background-size: cover;
+    background-image: url('https://picsum.photos/id/76/367/267');
+}
+
+.panel5{
+    background-size: cover;
+    background-image: url('https://picsum.photos/536/354');
+}
+
+
+
