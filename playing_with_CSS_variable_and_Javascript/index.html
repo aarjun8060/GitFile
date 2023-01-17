@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing With CSS Variable and JS</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="div">
+        <div class="heading">
+            <h1>Playing With<span>CSS</span> Variable and <span>JS</span></h1>
+        </div>
+        <div class="controls">
+            <div id="spacing">
+                <label for="spacing">Spacing</label>
+                <input type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+            </div>
+            <div id="blur">
+                <label for="blur">Blur</label>
+                <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+            </div>
+            <div id="base-color">
+                <label for="base-color">Base Color</label>
+                <input type="color" name="base" value="#ffc600">
+            </div>
+        </div>
+        <img src="https://i.picsum.photos/id/182/2896/1944.jpg?hmac=lzw4TC7qF2R3BEJu05d0M6rdglY57ugjugCP6XoiMbQ" alt="image">
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
