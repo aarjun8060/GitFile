@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="text">Increment and Decrement</div>
+            <div class="box">
+                    <button  style="background-color: #0398d4" onclick="decrement()">
+                        <i class="fa-solid fa-minus" style="background-color: #0398d4;"></i>
+                    </button>
+                    <div id="counter" style="border:2px solid black;background-color: #0398d4;">
+                        0
+                    </div>
+                    <button  style ="background-color: #0398d4" onclick="increment()">
+                        <i class="fa-solid fa-plus" style="background-color: #0398d4;"></i>
+                    </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/7aa5239422.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+<style>
+    * {
+        background-color:#373F53;
+        width: 100%;
+    }
+    #wrapper{
+        gap: 10px;
+        height: 90vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;;
+        /* border: 1px solid black; */
+    }
+    .text{
+        color: #0398d4;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .box{
+        background-color: white;
+        gap: 12px;
+        padding: 3px;
+        padding-left: 5px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        border: 1px solid black;
+    }
+
+</style>
+</html>
